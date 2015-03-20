@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Codes/Player.cs">
+    <Files>
+      <File FileName="Assets/Codes/WorldControl.cs" Line="11" Column="42" />
+      <File FileName="Assets/Codes/Player.cs" Line="6" Column="42" />
+      <File FileName="Assets/Codes/Game.cs" Line="43" Column="60" />
+      <File FileName="Assets/Codes/MoveBand.cs" Line="25" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

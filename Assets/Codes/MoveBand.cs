@@ -16,10 +16,6 @@ public class MoveBand : MonoBehaviour {
 	public float max { get { return transform.localScale.x/2; } }
 	
 	public float mid { get { return (min + max)/2; } }
-	
-	void Start() {
-		Debug.Log("i am " + name + ", my (min, max) is (" + min + ", " + max + ")");
-	}
 }
 
 

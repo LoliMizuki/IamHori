@@ -22,6 +22,10 @@ public class Player : MonoBehaviour {
 	void Update () {
 		UpdateMoveControl();
 		UpdateWorldRotation();
+		
+		if (Input.GetKey(KeyCode.V)) {
+			GameObject.Find("Window Wall").transform.FindChild("GlassWindow").GetComponent<GlassCrash>().CrashMe();
+		}
 	}
 	
 	void UpdateMoveControl() {

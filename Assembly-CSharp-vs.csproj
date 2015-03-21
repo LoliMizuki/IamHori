@@ -52,6 +52,7 @@
      <Compile Include="Assets\Codes\GlassCrash.cs" />
      <Compile Include="Assets\Codes\MoveBand.cs" />
      <Compile Include="Assets\Codes\Player.cs" />
+     <Compile Include="Assets\Codes\ShowBlood.cs" />
      <Compile Include="Assets\Codes\WorldControl.cs" />
      <Compile Include="Assets\MZ\GameElements\ActionTime.cs" />
      <Compile Include="Assets\MZ\GameElements\Actions\Action.cs" />

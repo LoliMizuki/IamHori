@@ -1,15 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Codes/Enemy.cs">
-    <Files>
-      <File FileName="Assets/Codes/WorldControl.cs" Line="11" Column="42" />
-      <File FileName="Assets/Codes/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/Codes/Game.cs" Line="17" Column="93" />
-      <File FileName="Assets/Codes/MoveBand.cs" Line="21" Column="1" />
-      <File FileName="Assets/Codes/Enemy.cs" Line="29" Column="42" />
-      <File FileName="Assets/Codes/Bala.cs" Line="6" Column="23" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -14,17 +14,24 @@ public class Player : MonoBehaviour {
 	MoveBand _currentMoveBound;
 	
 	float _rotationColddownCount = 0;
+	
+	bool _hasScreamed = false;
+	
+	bool _hasGlassCrash = false;
 
-	void Start () {
+	void Start() {}
 	
-	}
-	
-	void Update () {
+	void Update() {
 		UpdateMoveControl();
 		UpdateWorldRotation();
 		
 		if (Input.GetKey(KeyCode.V)) {
+			if (_hasGlassCrash) return;
+			_hasGlassCrash = true;
+			
 			GameObject.Find("Window Wall").transform.FindChild("GlassWindow").GetComponent<GlassCrash>().CrashMe();
+			GameObject.Find("Window Wall").GetComponent<AudioSource>().enabled = true;
+			GameObject.Find("Window Wall").GetComponent<AudioSource>().Play();
 		}
 	}
 	
@@ -66,6 +73,13 @@ public class Player : MonoBehaviour {
 		transform.localPosition = Vector3.zero + new Vector3(0, 0.931f, 0);
 		transform.localRotation = Quaternion.Euler(Vector3.zero);
 		
+		// scream event
+		if (!_hasScreamed) {
+			_hasScreamed = true;
+			
+			GetComponent<AudioSource>().enabled = true;
+			GetComponent<AudioSource>().Play();
+		}
 //		Camera.main.transform.localRotation = WorldControl.CameraRotationWithDirection(worldControl.horizontalDirection);
 		// update player position 
 	}

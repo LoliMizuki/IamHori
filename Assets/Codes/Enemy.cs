@@ -35,6 +35,9 @@ public class Enemy : MonoBehaviour {
 		newBala.GetComponent<Bala>().direction = new Vector3(dir.x, 0, dir.y);
 		newBala.GetComponent<Bala>().velocity = 50;
 		
+		var degrees = MZ.Maths.DegreesFromXAxisToVector(diffv2);
+		newBala.transform.rotation = Quaternion.Euler(0, 90 + degrees, 0);
+		
 //		var vec = tarPos - transform.position;
 //		
 //		var force3 = new Vector3(-vec.x/100, fy/total, fz/total) * force * transform.localScale.x;
